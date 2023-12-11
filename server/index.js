@@ -22,17 +22,17 @@ app.use(bodyparser.json());
 
 
 
-const database = process.env.DATABASENAME
 
 const db = mysql.createConnection({
-    host:'localhost',
-    database:database,
-    user:'root',
-    password:'kishore2003@mysql'
+    host:process.env.DATABASEHOST,
+    database:process.env.DATABASENAME,
+    user:process.env.DB_USERNAME,
+    password:process.env.DB_PASSWORD
 })
 
 
 db.connect((err)=>{
+    
     if(!err)
     {
         console.log("connected successfully to mysqlworkbench");

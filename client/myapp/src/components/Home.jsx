@@ -25,7 +25,7 @@ function Home() {
 
     const handlesubmit = async(e) => {
         e.preventDefault();
-        const url = "http://localhost:8000/";
+        const url = "https://empserver-a31i.onrender.com/";
         const formdata = await fetch(url,{
             method:"post",
             headers:{"Content-Type":"application/json"},
