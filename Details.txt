@@ -1,0 +1,5 @@
+DB - mysql - clever cloud
+
+Github - pushed
+
+Deployment - deployed
